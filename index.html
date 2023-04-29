@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="topo">
+                <li>
+                    <a href="Pags/Cuidados.html"><button> Curiosidades</button></a>
+                </li>
+
+                <li>
+                    <a href="/Pags/Habitos.html"><button> Hábitos de boa alimentação</button>
+                    </a>
+                </li>
+                <li>
+                <a href="Pags/Bem-estar.html">
+                <button>Sites para o bem-estar</button>
+            </a></li>
+
+                <li>
+                    <a href="Pags/IMC.html">
+                        <button>O que é IMC?</button></a>
+                </li>
+                
+            
+            
+        </header>
+    </div>
+        <div class="cabeçalho-link">
+    <div class="bloco_principal">
+        <div class="div_dados">
+            <div class="image">
+                <img id="imc_img" src="img/logo-imc3.png" alt="img">
+                <p>Seu IMC é: <span id="res"></span></p>
+            </div>
+        </div>
+        <div class="div_form">
+            <p id="msg"></p>
+            <div class="main">
+                <div class="div_input">
+                    <input id="peso" placeholder="Peso" class="input">
+                </div>
+    
+                <div class="div_input">
+                    <input id="altura" placeholder="Altura" class="input" onkeypress="mask()">
+                </div>
+                <div class="check">
+                    <input name = "faixa_etaria" id = "faixa_etaria" type="radio" checked >Adulto
+                    <input name = "faixa_etaria" type="radio" >Idoso
+                </div>
+
+                <button type="button" onclick="calcular()">Calcular</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    
+</body>
+
+<script src="JavaScript/script.js"></script>
+
+</html>
